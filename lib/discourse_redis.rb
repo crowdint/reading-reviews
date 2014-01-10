@@ -16,7 +16,7 @@ class DiscourseRedis
 
   def self.url(config=nil)
     config ||= self.config
-    "redis://#{(':' + config['password'] + '@') if config['password']}#{config['host']}:#{config['port']}/#{config['db']}"
+    "redis://#{(':' + config['password'] + '@') if config['password']}#{config['host']}:#{config['port']}"
   end
 
   def initialize
