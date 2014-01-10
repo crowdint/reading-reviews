@@ -6,6 +6,7 @@ defaults: &defaults
   db: 0
   cache_db: 2
 
+
 development:
   <<: *defaults
 
