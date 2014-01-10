@@ -134,7 +134,7 @@ module Discourse
 
     # Since we are using strong_parameters, we can disable and remove attr_accessible.
     config.active_record.whitelist_attributes = false unless rails4?
-
+    config.assets.initialize_on_precompile = false
     require 'auth'
     Discourse.activate_plugins! unless Rails.env.test?
 
